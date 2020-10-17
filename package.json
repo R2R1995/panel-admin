@@ -1,5 +1,6 @@
 {
   "name": "admin-panel",
+  "main": "lib/index.js",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,16 +8,21 @@
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
-    "react": "^16.12.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.14.0",
     "react-bootstrap": "^1.0.0-beta.16",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.1"
+    "react-dom": "^16.14.0",
+    "react-scripts": "3.3.1",
+    "react-simple-line-icons": "^1.0.8",
+    "reactstrap": "^8.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "babel src/ -d lib/",
+    "prepublish": "npm run build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "flow": "flow"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +38,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-flow": "^7.12.1",
+    "flow-bin": "^0.136.0"
   }
 }

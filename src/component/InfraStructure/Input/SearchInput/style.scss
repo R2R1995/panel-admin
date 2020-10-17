@@ -1,0 +1,33 @@
+.search {
+  position: relative;
+  width: 230px;
+  border-radius: 20px;
+  background: #f8f8f8;
+  input,
+  input:focus {
+    border: initial;
+    background: transparent;
+    outline: medium none invert !important;
+    outline: initial !important;
+    padding: 0.5rem 1rem;
+    line-height: 1.75;
+    font-size: 0.8rem;
+    width: 93%;
+    color: #3a3a3a;
+  }
+  .search-icon {
+    border-radius: 10px;
+    color: #d7d7d7;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: -14px;
+    left: 3px;
+    text-align: center;
+    cursor: pointer;
+    .icon-magnifier {
+      font-size: 17px !important;
+      vertical-align: middle;
+    }
+  }
+}
